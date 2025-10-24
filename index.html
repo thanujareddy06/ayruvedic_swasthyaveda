@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AyurMind AI</title>
+  
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://aistudiocdn.com/react@^19.2.0",
+      "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+      "react/": "https://aistudiocdn.com/react@^19.2.0/",
+      "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+      "recharts": "https://aistudiocdn.com/recharts@^3.3.0"
+    }
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #1a2a22; /* Fallback */
+        color: #F0EAD6; /* Default text color */
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    .font-serif { font-family: 'Merriweather', serif; }
+    .font-sans { font-family: 'Poppins', sans-serif; }
+
+    /* Custom scrollbar for a more integrated look */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #1a2a22;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #6A8A7C;
+        border-radius: 10px;
+        border: 2px solid #1a2a22;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #C9A977;
+    }
+    .prose {
+        --tw-prose-body: #F0EAD6;
+        --tw-prose-headings: #C9A977;
+        --tw-prose-lead: #F0EAD6;
+        --tw-prose-links: #F0EAD6;
+        --tw-prose-bold: #F0EAD6;
+        --tw-prose-counters: #F0EAD6;
+        --tw-prose-bullets: #C9A977;
+        --tw-prose-hr: #C9A977;
+        --tw-prose-quotes: #F0EAD6;
+        --tw-prose-quote-borders: #C9A977;
+        --tw-prose-captions: #F0EAD6;
+        --tw-prose-code: #F0EAD6;
+        --tw-prose-pre-code: #F0EAD6;
+        --tw-prose-pre-bg: rgba(0, 0, 0, 0.2);
+        --tw-prose-th-borders: #C9A977;
+        --tw-prose-td-borders: #C9A977;
+        --tw-prose-invert-body: #F0EAD6;
+        --tw-prose-invert-headings: #C9A977;
+        /* ... add other prose variables as needed */
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-green': '#4A6A5C',
+            'brand-green-light': '#6A8A7C',
+            'brand-gold': '#C9A977',
+            'brand-cream': '#F0EAD6',
+            'brand-text': '#1a2a22',
+          },
+          fontFamily: {
+             serif: ['Merriweather', 'serif'],
+             sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
